@@ -1,1 +1,43 @@
+<html>
+    <head>
+        <link rel="icon" href="/icon.png">
+        <title>ru040076's Website</title>
+        <div class="navbar">
+            <a href="#home" class="nav-item">Home</a>
+            <a href="#services" class="nav-item">Services</a>
+            <a href="#about" class="nav-item">About</a>
+            <a href="#contact" class="nav-item">Contact</a>
+          </div>
+          <h1 class="Center">Super mario rpg stuff</h1>
+          <button class="CenterButton" onclick=GoToMain()>Return to main page</button>
+          <h4>Resources Used:</h4>
+          <a href="https://dl.neoromhacking.net/documents/[328]doc_ram-addr.txt">
+    </head>
+</html>
+<style>
+    .Center {
+  text-align: center;
+}
+    .navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+  padding: 10px;
+  color: white;  
+} body {
+      font-family: 'Poppins', sans-serif;
+    } .CenterButton {
+        margin: 0;
+        position: absolute;
+        left: 50%;
+       -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
 
+</style>
+<script>
+    function GoToMain() {
+open("/Main.html")
+                     }
+</script>
