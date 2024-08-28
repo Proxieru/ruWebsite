@@ -1,68 +1,92 @@
-<html>
-    <head>
-        <link rel="icon" href="/icon.png">
-        <title>ru040076's Website</title>
-        <div class="navbar">
-            <button onclick="GoToMain()" class="nav-item">Home</button>
-            <a href="#services" class="nav-item">Services</a>
-            <a href="#about" class="nav-item">About</a>
-            <a href="#contact" class="nav-item">Contact</a>
-          </div>
-    </head>
-          <h1 class="Center">Super mario rpg stuff</h1>
-<h1>Table of Contents</h1>
-<a href="#DMCC">Documenting memory cheat codes</a>
-    <br>
-<a href="#ROTW">ROMs of the week</a>
- 
-          <h3 id="DMCC">Documenting memory cheat codes</h3>
-<h4>00:3032 (Character slots empty)</h4>
-<h5>Findings: If you set it to 1, you can only play as mario, same for settings it to 2 or 3,</h5>
-<h5>If set beyond 5 (the normal max amount that cnan be in your party) it will glitch out your switch menu and elements of the switch menu will overlap</h5>
-<h4>00:3033-00:3037 (Character slots 1-5)</h4>
-<h5>Findings: If set beyond normal amount of characters, for example if set to 6 it will put a bugged character into whatever slot you chose
-<h5>For 6, the character name is Fire with a star before the name, possibly reading from enemy spell memory? it also uses the icon for the Frog Sages staff</h5>
-<h5>and is also level 15 with glitched characters infront of the HP value which is 35/35. another thing about these bugged characters is that they often use different sprites in battle rather then the menu</h5>
-<h5>and have no animations. Some are unstable and will freeze the game if you attack a enemy but some don't. Also they sometimes have Dumm or Dummy attacks which usually don't do anything or will freeze the game on use. Some also have giltched items such as a item named "Weapon" as a example</h5>
-<h5>if you want to find more giltchy sprites/characters or behavior by all means I encourage you to grab a emulator, type in the cheat code like: 3033=(Number) and try it out! (this should work with the other codes too so try them out!)</h5> 
-         <h3>Resources Used:</h3>
-          <a href="https://dl.neoromhacking.net/documents/[328]doc_ram-addr.txt">https://dl.neoromhacking.net/ [Ram Map]</a>
-          <h3 id="ROTW">ROM's of the week</h3>
-          <a href="https://github.com/Proxieru/ROMs-Of-the-week./raw/main/Easy%20ROM.sfc">Easy</a>
-<br>
-          <a href="https://github.com/Proxieru/ROMs-Of-the-week./raw/main/Advanced.sfc">Advanced</a>
-<br>
-          <a href="https://github.com/Proxieru/ROMs-Of-the-week./raw/main/Expert.sfc">Expert</a>
-    </body>
-</html>
-<style>
-    .Center {
-  text-align: center;
-}
-    .navbar {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: black;
-  padding: 10px;
-  color: white;  
-} body {
-      font-family: 'Poppins', sans-serif;
-      background-image: url('/background.png');
-    } .CenterButton {
-        margin: 0;
-        position: absolute;
-        left: 50%;
-       -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-    } DMCC {
-color: inherit; /* Removes default blue color and uses the color of the parent element */
-    text-decoration: none; /* Removes underline */
-    }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/icon.png">
+    <title>ru040076's Website</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-image: url('/background.png');
+            margin: 0;
+            padding: 0;
+        }
+        .Center {
+            text-align: center;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: black;
+            padding: 10px;
+            color: white;
+        }
+        .navbar a, .navbar button {
+            color: inherit; /* Removes default blue color and uses the color of the parent element */
+            text-decoration: none; /* Removes underline */
+            font-size: 16px; /* Example font size */
+        }
+        .navbar a:hover, .navbar button:hover {
+            text-decoration: underline; /* Optional: Add underline on hover for better UX */
+        }
+        /* Remove underline and color from all links */
+        a:link, /* Unvisited link */
+        a:visited, /* Visited link */
+        a:hover, /* Mouse over link */
+        a:active { /* Selected link */
+            color: inherit; /* Use the color of the parent element */
+            text-decoration: none; /* Remove underline */
+        }
+        /* Center button */
+        .CenterButton {
+            margin: 0;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <button onclick="GoToMain()" class="nav-item">Home</button>
+        <a href="#services" class="nav-item">Services</a>
+        <a href="#about" class="nav-item">About</a>
+        <a href="#contact" class="nav-item">Contact</a>
+    </div>
 
-</style>
-<script>
-    function GoToMain() {
-       window.location.href = 'Main.html';
-     }
-</script>
+    <h1 class="Center">Super Mario RPG Stuff</h1>
+    <h1>Table of Contents</h1>
+    <a href="#DMCC">Documenting Memory Cheat Codes</a>
+    <br>
+    <a href="#ROTW">ROMs of the Week</a>
+
+    <h3 id="DMCC">Documenting Memory Cheat Codes</h3>
+    <h4>00:3032 (Character slots empty)</h4>
+    <h5>Findings: If you set it to 1, you can only play as Mario, same for settings it to 2 or 3.</h5>
+    <h5>If set beyond 5 (the normal max amount that can be in your party) it will glitch out your switch menu and elements of the switch menu will overlap.</h5>
+    <h4>00:3033-00:3037 (Character slots 1-5)</h4>
+    <h5>Findings: If set beyond normal amount of characters, for example if set to 6 it will put a bugged character into whatever slot you chose.</h5>
+    <h5>For 6, the character name is Fire with a star before the name, possibly reading from enemy spell memory? It also uses the icon for the Frog Sage's staff.</h5>
+    <h5>And is also level 15 with glitched characters in front of the HP value which is 35/35. Another thing about these bugged characters is that they often use different sprites in battle rather than the menu.</h5>
+    <h5>And have no animations. Some are unstable and will freeze the game if you attack an enemy, but some don't. Also, they sometimes have Dumm or Dummy attacks which usually don't do anything or will freeze the game on use. Some also have glitched items such as an item named "Weapon" as an example.</h5>
+    <h5>If you want to find more glitchy sprites/characters or behavior, I encourage you to grab an emulator, type in the cheat code like: 3033=(Number) and try it out! (This should work with the other codes too, so try them out!)</h5> 
+
+    <h3>Resources Used:</h3>
+    <a href="https://dl.neoromhacking.net/documents/[328]doc_ram-addr.txt">https://dl.neoromhacking.net/ [Ram Map]</a>
+    <h3 id="ROTW">ROMs of the Week</h3>
+    <a href="https://github.com/Proxieru/ROMs-Of-the-week./raw/main/Easy%20ROM.sfc">Easy</a>
+    <br>
+    <a href="https://github.com/Proxieru/ROMs-Of-the-week./raw/main/Advanced.sfc">Advanced</a>
+    <br>
+    <a href="https://github.com/Proxieru/ROMs-Of-the-week./raw/main/Expert.sfc">Expert</a>
+
+    <script>
+        function GoToMain() {
+            window.location.href = 'Main.html';
+        }
+    </script>
+</body>
+</html>
