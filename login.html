@@ -66,8 +66,8 @@
 
     <script>
         // Initialize Supabase client
-        const supabaseUrl = 'YOUR_SUPABASE_URL';
-        const supabaseKey = 'YOUR_SUPABASE_ANON_KEY';
+        const supabaseUrl = 'https://jzwbapwqoaeurptwfhyo.supabase.co';
+        const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imp6d2JhcHdxb2FldXJwdHdmaHlvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjQ5OTAyODQsImV4cCI6MjA0MDU2NjI4NH0.VBrVlouopPY9Dv049G4DoilpIEdUWFAtjfe80OXZEiI';
         const supabase = supabase.createClient(supabaseUrl, supabaseKey);
 
         // Handle form submission
@@ -90,7 +90,7 @@
                 document.getElementById('error').textContent = '';
                 document.getElementById('message').textContent = 'Login successful!';
                 // Redirect or handle successful login
-                window.location.href = '/dashboard'; // Change this to your desired page
+                window.location.href = '/index.html'; // Change this to your desired page
             }
         });
     </script>
