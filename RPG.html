@@ -63,15 +63,15 @@
     <br>
     <a href="#ROTW">ROMs of the Week</a>
     <br>
-    <a href="#CSE">0x003032 (Character slots empty)</a>
+    <a href="#EBA">Environment Based Addresses</a>
     <br>
-    <a href="#CS1-5">0x003033-0x003037 (Character slots 1-5)</a>
+    <a href="#CBA">Character Based Addresses</a>
 
-    <h3 id="DMCC">Documenting Memory Addresses In Super Mario RPG.s</h3>
-    <h3>Environment Based Addresses</h3>
+    <h3 id="DMCC">Documenting Memory Addresses In Super Mario RPG.</h3>
+    <h3 id="EBA">Environment Based Addresses</h3>
     <h5>0x003030 - Current Area</h5>
     <h5>Doesn't seem to affect the current area your in but if set to any value (Besides 38, which does something different) you lose the ability to enter loading zones, but with doors you can noclip a bit above the door. anyways back to the case I mentioned with the value 38, if you enable this and you enter a loading zone (doors count as well) it will display the message "This is your last chance" which is from Bowser's Keep (after the bridge collapses) where you have to complete challenges within a certain amount of tries (you still cannot enter loading zones and doors) also if you warp to anywhere from the map you will end up in a black void and cannot move</h5>
-    <h5>Character Based Addresses</h5>
+    <h5 id="#CBA">Character Based Addresses</h5>
     <h5>0x003032 - Character Slots Open (1-5)</h5>
     <h5>Normally is restricted to the values [1-5] as that is the normal amount of characters that can be apart of your party in the game, but if you try to set it below 0 and try to open the menu the game freezes [same with negative values]. anyways besides that, if set outside the normal range [5-10] in the switch menu, the character menu will overlap with the text "Switch", "Which two?" and you can get two characters such as having two identical Mario's and such (Is quite funny actually) the game also freezes if you go beyond 10.</h5>
     <h3>How to use</h3>
