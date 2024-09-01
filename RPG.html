@@ -59,25 +59,23 @@
 
     <h1 class="Center">Super Mario RPG Stuff</h1>
     <h1>Table of Contents</h1>
-    <a href="#DMCC">Documenting Memory Cheat Codes</a>
+    <a href="#DMCC">Documenting Memory Addresses In Super Mario RPG.</a>
     <br>
     <a href="#ROTW">ROMs of the Week</a>
     <br>
     <a href="#CSE">0x003032 (Character slots empty)</a>
     <br>
-    <a href="#CS1-5">00:3033-00:3037 (Character slots 1-5)</a>
+    <a href="#CS1-5">0x003033-0x003037 (Character slots 1-5)</a>
 
-    <h3 id="DMCC">Documenting Memory Cheat Codes</h3>
-    <h4 id="CSE">00:3032 (Character slots empty)</h4>
-    <h5>Findings: If you set it to 1, you can only play as Mario, same for settings it to 2 or 3.</h5>
-    <h5>If set beyond 5 (the normal max amount that can be in your party) it will glitch out your switch menu and elements of the switch menu will overlap.</h5>
-    <h4 id="CS1-5">00:3033-00:3037 (Character slots 1-5)</h4>
-    <h5>Findings: If set beyond normal amount of characters, for example if set to 6 it will put a bugged character into whatever slot you chose.</h5>
-    <h5>For 6, the character name is Fire with a star before the name, possibly reading from enemy spell memory? It also uses the icon for the Frog Sage's staff.</h5>
-    <h5>And is also level 15 with glitched characters in front of the HP value which is 35/35. Another thing about these bugged characters is that they often use different sprites in battle rather than the menu.</h5>
-    <h5>And have no animations. Some are unstable and will freeze the game if you attack an enemy, but some don't. Also, they sometimes have Dumm or Dummy attacks which usually don't do anything or will freeze the game on use. Some also have glitched items such as an item named "Weapon" as an example.</h5>
-    <h5>If you want to find more glitchy sprites/characters or behavior, I encourage you to grab an emulator, type in the cheat code like: 3033=(Number) and try it out! (This should work with the other codes too, so try them out!)</h5> 
-
+    <h3 id="DMCC">Documenting Memory Addresses In Super Mario RPG.s</h3>
+    <h3>Environment Based Addresses</h3>
+    <h5>0x003030 - Current Area</h5>
+    <h5>Doesn't seem to affect the current area your in but if set to any value (Besides 38, which does something different) you lose the ability to enter loading zones, but with doors you can noclip a bit above the door. anyways back to the case I mentioned with the value 38, if you enable this and you enter a loading zone (doors count as well) it will display the message "This is your last chance" which is from Bowser's Keep (after the bridge collapses) where you have to complete challenges within a certain amount of tries (you still cannot enter loading zones and doors) also if you warp to anywhere from the map you will end up in a black void and cannot move</h5>
+    <h5>Character Based Addresses</h5>
+    <h5>0x003032 - Character Slots Open (1-5)</h5>
+    <h5>Normally is restricted to the values [1-5] as that is the normal amount of characters that can be apart of your party in the game, but if you try to set it below 0 and try to open the menu the game freezes [same with negative values]. anyways besides that, if set outside the normal range [5-10] in the switch menu, the character menu will overlap with the text "Switch", "Which two?" and you can get two characters such as having two identical Mario's and such (Is quite funny actually) the game also freezes if you go beyond 10.</h5>
+    <h3>How to use</h3>
+    <h5>Grab a emulator, go into the cheat menu of said emulator and type in any of the provided memory address. for example: 0x003037=[value] and then add the cheat and enable it and your done!</value></h5>
     <h3>Resources Used:</h3>
     <a href="https://dl.neoromhacking.net/documents/[328]doc_ram-addr.txt">https://dl.neoromhacking.net/ [Ram Map]</a>
     <h3 id="ROTW">ROMs of the Week</h3>
