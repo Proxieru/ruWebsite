@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <link rel="icon" href="/icon.png">
+        <title>ru040076's Website</title>
+  <h1>Welcome! input codes into the box to unlock the heavy</h1>
+    <p id="result"></p>
+
+    <script>
+        const encodedPasswords = [
+            "SGVhdnlzQnJhaW4zMDQ=", 
+            "Tm9tIE5vbSBOb20=",    
+            "Tm9vbmVjYW5vdXRzbWFydHNhbmR2aWNo"
+        ];
+
+        // Decode Base64
+        const decodedPasswords = encodedPasswords.map(encoded => atob(encoded));
+
+        // Create an array with 100 empty slots
+        const slots = new Array(100).fill(null);
+
+        // Function to display decoded passwords and slots
+        function displayPasswordsAndSlots() {
+            let result = '<h2>Stored Passwords (Decoded):</h2><ul>';
+
+            // Display the decoded passwords
+            decodedPasswords.forEach((password, index) => {
+                result += `<li>Password ${index + 1}: ${password}</li>`;
+            });
+
+            result += '</ul><h2>Slots:</h2><ul>';
+
+            // Display slots (all empty in this case)
+            slots.forEach((slot, index) => {
+                result += `<li>Slot ${index + 1}: ${slot === null ? 'Empty' : slot}</li>`;
+            });
+
+            result += '</ul>';
+
+            document.getElementById('result').innerHTML = result;
+        }
+
+        // Display the decoded passwords and slots
+        displayPasswordsAndSlots();
+    </script>
+</body>
+</html>
+
+          
+    </head>
+</html>
+<style>
+    .Center {
+  text-align: center;
+}
+    .navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+  padding: 10px;
+  color: white;  
+} body {
+      font-family: 'Poppins', sans-serif;
+background-image: url('/background.png');
+background-size: cover; /* Cover the entire element */
+            background-repeat: repeat-y; /* Repeat the image vertically */
+            animation: scrollBackground 20s linear infinite;
+    } .CenterButton {
+        margin: 0;
+        position: absolute;
+        left: 50%;
+       -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%)
+    }
+
+</style>
+<script>
+    function GoToRPG() {
+window.location.href = 'RPG.html';
+                     }
+</script>
